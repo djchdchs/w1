@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 1</title>
+  </head>
+  <body>
+    <h1 id="h1">Список ссылок</h1>
+    <ol>
+      <li>
+        <a href="http://example.com"
+          >Абсолютная гиперссылка на главную страницу сайта</a
+        >
+      </li>
+      <li>
+        <a href="https://example.com"
+          >Абсолютная гиперссылка на главную страницу сайта в протоколе https</a
+        >
+      </li>
+      <li>
+        <a href="ftp://example.com/files/index.html"
+          >Ссылка на файл на сервере FTP без авторизации</a
+        >
+      </li>
+      <li>
+        <a href="ftp://user:pass123@example.com/files/index.html"
+          >Ссылка на файл на сервере FTP с авторизацией</a
+        >
+      </li>
+      <li>
+        <a id="fragment" href="https://kubsu.ru/#main-content"
+          >Ссылка на фрагмент страницы некоторого сайта</a
+        >
+      </li>
+      <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+      <li>
+        <a href="https://kubsu.ru?parameter1=p1&parameter2=p2"
+          >Ссылка с двумя параметрами в URL</a
+        >
+      </li>
+      <li>
+        <ul>
+          <li>
+            <a
+              href="#h1"
+              title="список ссылок основной навигации сайта с подписями title"
+              >Нумерованный список</a
+            >
+          </li>
+          <li><a href="#h2" title="Форма">Форма</a></li>
+        </ul>
+      </li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="">Ссылка с пустым href</a></li>
+      <li>
+        <a href="https://kubsu.ru" rel="nofollow"
+          >Ссылка, по которой запрещен переход поисковикам</a
+        >
+      </li>
+      <li>
+        <a href="https://kubsu.ru" rel="nofollow"
+          >Ссылка, запрещенная для индексации поисковиками</a
+        >
+      </li>
+      <li>
+        <p>Контекстная <a href="https://kubsu.ru"></a>ссылка в тексте абзаца</p>
+      </li>
+      <li>
+        Ссылка-изображение<br />
+        <a href="https://kubsu.ru">
+          <img
+            src="https://look.com.ua/pic/201212/1280x720/look.com.ua-63163.jpg"
+            alt="изображение 1"
+          />
+        </a>
+      </li>
+      <li>
+        Ссылки из прямоугольных и круглых областей картинки<br />
+        <img
+          src="https://look.com.ua/pic/201209/640x480/look.com.ua-28105.jpg"
+          alt="изображение 2"
+          usemap="#map"
+        />
+        <map name="map">
+          <area
+            shape="rect"
+            coords="40,25,90,150"
+            href="https://kubsu.ru"
+            alt="Прямоугольная область"
+          />
+          <area
+            shape="circle"
+            coords="234,332,140"
+            href="https://kubsu.ru"
+            alt="Круглая область"
+          />
+        </map>
+      </li>
+      <li>
+        <a href="page">Относительная ссылка на страницу в текущем каталоге</a>
+      </li>
+      <li>
+        <a href="./about/page"
+          >Относительная ссылка на страницу в каталоге about</a
+        >
+      </li>
+      <li>
+        <a href="../page"
+          >Относительная ссылка на страницу в каталоге уровнем выше текущего</a
+        >
+      </li>
+      <li>
+        <a href="../../page"
+          >Относительная ссылка на страницу в каталоге двумя уровнями выше
+          текущего</a
+        >
+      </li>
+      <li><a href="/">Сокращенная ссылка на главную</a></li>
+      <li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+    </ol>
+    <h2 id="h2">Форма</h2>
+    <form action="http://example.com" method="POST">
+      <label>
+        Имя:<br />
+        <input name="Имя" /> </label
+      ><br />
+      <label>
+        e-mail:<br />
+        <input name="e-mail" type="email" /> </label
+      ><br />
+      <label>
+        Дата рождения:<br />
+        <input name="date" type="date" /> </label
+      ><br />
+      Количество конечностей:<br />
+      <label>
+        <input type="radio" name="radio-group-1" value="1" />
+        1
+      </label>
+      <label>
+        <input type="radio" name="radio-group-1" value="2" />
+        2
+      </label>
+      <label>
+        <input type="radio" name="radio-group-1" value="3" />
+        3
+      </label>
+      <label>
+        <input type="radio" name="radio-group-1" value="3" />
+        4
+      </label>
+      <br />
+      <label>
+        Сверхспособности:<br />
+        <select name="skill" multiple="multiple">
+          <option value="immortality">бессмертие</option>
+          <option value="passingthroughwalls">прохождение сквозь стены</option>
+          <option value="levitation" selected="selected">левитация</option>
+        </select> </label><br />
+      <label>
+        Биография:<br />
+        <textarea name="bio">О себе</textarea></label><br />
+        С контрактом ознакомлен(а):<br />
+      <label> <input type="checkbox" checked="checked" name="check-1" /> </label><br />
+      <input type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
