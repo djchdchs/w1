@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.tablee {
+  order: 2;
+}
+
+.contacts {
+  order: 1;
+}
