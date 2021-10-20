@@ -1,5 +1,7 @@
-window.addEventListener("DOMContentLoaded", function (event) {
-  console.log("DOM fully loaded and parsed");
+window.addEventListener("DOMContentLoaded", function (even) {
+    console.log("DOM fully loaded and parsed");
+    let b = document.getElementById("click");
+    b.addEventListener("click", calculate);
 });
 
 function calculate() {
