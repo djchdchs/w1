@@ -21,13 +21,13 @@ function calculate() {
     )
   ) {
     alert("Нужно писать число!");
-  } else if (firstProduct == "") {
+  } else if (firstProduct === "") {
     alert("вы не указали цену 1 товару");
-  } else if (firstLot == "") {
+  } else if (firstLot === "") {
     alert("вы не указали кол-во 1 товара");
-  } else if (secondProduct == "") {
+  } else if (secondProduct === "") {
     alert("вы не указали цену 2 товару");
-  } else if (secondLot == "") {
+  } else if (secondLot === "") {
     alert("вы не указали кол-во 2 товара");
   } else {
     const cost = firstProduct * firstLot + secondProduct * secondLot;
