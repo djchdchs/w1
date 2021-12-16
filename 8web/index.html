@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>8 web</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="popup__bg">
+        <form class="popup" id="form">
+          <p class="close-popup">x</p>
+          <div class="label__text">Ваше имя</div>
+          <label>
+            <input id="inputName" type="text" name="name" />
+          </label>
+          <div class="label__text">Ваш email</div>
+          <label>
+            <input id="inputEmail" type="email" name="tel" />
+          </label>
+          <div class="label__text">Ваше сообщение</div>
+          <label>
+            <textarea id="inputMsg" name="message"></textarea>
+          </label>
+          <div class="popup-checkbox__text">
+            согласие с политикой обработки персональных данных
+          </div>
+          <label>
+            <input id="inputCB" type="checkbox" />
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="btn">
+        <button class="open-popup">Открыть попап</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
